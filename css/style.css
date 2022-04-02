@@ -1,6 +1,7 @@
 /* Variables */
 :root {
   --accent-color: #2196f3;
+  --assent-color-dark: #188ce8;
   --primary-text-color: #757575;
   --secondary-text-color: #212121;
   --light-text-color: #fff;
@@ -32,6 +33,7 @@ body {
 }
 
 .btn {
+  font-family: inherit;
   border-radius: 4px;
   border: none;
   cursor: pointer;
@@ -43,7 +45,17 @@ body {
 }
 
 .hidden {
-  display: none;
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
 }
 
 .section-title {
@@ -64,6 +76,10 @@ body {
 
 .dark-logo {
   color: var(--dark-text-color);
+}
+
+.menu-link {
+  color: var(--secondary-text-color);
 }
 
 .menu-link,
@@ -105,9 +121,15 @@ body {
   line-height: 1.88;
 }
 
+.hero-btn:hover,
+.hero-btn:focus {
+  background-color: var(--assent-color-dark);
+}
+
 /* Features section */
 .feature-title {
   font-weight: 700;
+  font-size: inherit;
   line-height: 1.14;
   text-transform: uppercase;
   color: var(--secondary-text-color);
@@ -128,6 +150,7 @@ body {
 
 .team-name {
   font-weight: 500;
+  font-size: inherit;
   color: var(--secondary-text-color);
 }
 
